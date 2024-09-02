@@ -1,18 +1,5 @@
-import dataclasses
-
 import scrapy
 from scrapy.http import Response
-
-
-@dataclasses.dataclass
-class Book:
-    title: str
-    price: float
-    amount_in_stock: int
-    rating: float
-    category: str
-    description: str
-    upc: int
 
 
 class BooksSpider(scrapy.Spider):
